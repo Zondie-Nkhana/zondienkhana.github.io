@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zondie Nkhana | ICT Educator & Tech Specialist</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #2563eb;
+      --dark: #0f172a;
+      --light: #f8fafc;
+      --muted: #64748b;
+      --card: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      line-height: 1.7;
+      color: var(--dark);
+      background: var(--light);
+      scroll-behavior: smooth;
+    }
+
+    /* Header / Hero */
+    header {
+      background: linear-gradient(135deg, #2563eb, #1e40af);
+      color: #fff;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    header p {
+      margin: 15px auto 30px;
+      max-width: 700px;
+      font-size: 1.2rem;
+      opacity: 0.95;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #fff;
+      color: var(--primary);
+      padding: 12px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    /* Navigation */
+    nav {
+      position: sticky;
+      top: 0;
+      background: var(--dark);
+      padding: 12px 10px;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #e5e7eb;
+      margin: 0 14px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #93c5fd;
+    }
+
+    /* Sections */
+    section {
+      padding: 70px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    h2::after {
+      content: '';
+      width: 60px;
+      height: 4px;
+      background: var(--primary);
+      display: block;
+      margin-top: 10px;
+      border-radius: 2px;
+    }
+
+    /* Cards */
+    .card {
+      background: var(--card);
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+      margin-bottom: 25px;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    /* Skills */
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+
+    .skills span {
+      background: #eef2ff;
+      padding: 14px 16px;
+      border-radius: 12px;
+      font-weight: 500;
+      color: #1e3a8a;
+      text-align: center;
+    }
+
+    /* Experience */
+    .experience-grid {
+      display: grid;
+      gap: 25px;
+    }
+
+    /* Projects */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    /* Contact */
+    #contact p {
+      font-size: 1.05rem;
+      color: var(--muted);
+    }
+
+    /* Footer */
+    footer {
+      background: var(--dark);
+      color: #cbd5f5;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.3rem; }
+      header p { font-size: 1.05rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="profile.jpg" alt="Zondie Nkhana" style="width:160px;height:160px;border-radius:50%;border:5px solid rgba(255,255,255,0.7);margin-bottom:20px;object-fit:cover;" />
+  <h1>Zondie Nkhana</h1>
+  <p>ICT Educator • Computer Studies & Mathematics Teacher • ICT Support Specialist</p>
+  <a class="btn" href="#contact">Get in Touch</a>
+  <a class="btn" href="cv.pdf" style="margin-left:10px;" download>Download CV</a>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am an ICT Educator with over <strong>6 years of experience</strong> teaching Computer Studies and Mathematics,
+    alongside providing ICT support services. I hold a <strong>Bachelor of Education Science in ICT</strong>
+    from the University of Livingstonia and have a strong passion for technology-driven education
+    and practical digital solutions.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>Computer Studies Teaching</span>
+    <span>Mathematics Teaching</span>
+    <span>ICT Support & Troubleshooting</span>
+    <span>HTML, CSS & JavaScript</span>
+    <span>Python, C & C++</span>
+    <span>MySQL & MS Access</span>
+    <span>Networking Fundamentals</span>
+    <span>System Installation & Maintenance</span>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="experience-grid">
+    <div class="card">
+      <h3>Mzuzu Government Secondary School</h3>
+      <p><strong>Computer Studies & Mathematics Teacher</strong><br>March 2024 – Present</p>
+      <ul>
+        <li>Teaching Computer Studies and Mathematics</li>
+        <li>ICT laboratory management and support</li>
+        <li>Lesson planning and curriculum delivery</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Marymount Girls Catholic Secondary School</h3>
+      <p><strong>Computer Studies & Mathematics Teacher</strong><br>2018 – 2024</p>
+      <ul>
+        <li>Delivered ICT and Mathematics lessons</li>
+        <li>Provided ICT support and staff training</li>
+        <li>Supported digital transformation initiatives</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    <div class="card">
+      <h3>School Management System</h3>
+      <p>
+        Developing a web-based school management system to handle students,
+        academic records, and reporting.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>ICT Support & Training</h3>
+      <p>
+        Provided system setup, printer troubleshooting, user support,
+        and basic ICT training for staff and students.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: <strong>your-email@example.com</strong></p>
+  <p>Phone: <strong>+265 882 870 849</strong></p>
+  <p>Location: Malawi</p>
+  <p>
+    <a class="btn" href="https://github.com/yourusername" target="_blank">GitHub Profile</a>
+    <a class="btn" href="cv.pdf" style="margin-left:10px;" download>Download CV</a>
+  </p>
+</section>
+
+<footer>
+  <p>© 2025 Zondie Nkhana • Built with HTML & CSS • Hosted on GitHub Pages</p>
+</footer>
+
+</body>
+</html>
